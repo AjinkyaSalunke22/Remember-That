@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#home">Remember<span>That</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#pre">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Watch a video
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awesome features</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"I have been using this site since 2 years and I have amazed by seeing all the feature in it."</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person2.jpg" alt="Person">
+
+                    <blockquote>"This has been a greatest of the experience using this site."</blockquote>
+                    <cite>- Aladin</cite>
+                </li>
+                <li>
+                    <img src="images/person3.jpg" alt="Person">
+
+                    <blockquote>"Just loved this site, sharing its experience in words is impossible."</blockquote>
+                    <cite>- Merry Ten</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input placeholder="Enter your name." type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea placeholder="Write a message for us ..." name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.9821823574466!2d73.6582349!3d18.706777599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b1d71d126f9d%3A0xe21f7d1ed3c51505!2sIndira%20College%20of%20Engineering%20and%20Management!5e1!3m2!1sen!2sin!4v1671884971050!5m2!1sen!2sin" width="600" height="450" style="border:3;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer id="pre">
+        <a href="https://github.com/AjinkyaSalunke22"><i class="fa-brands fa-square-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/aj-salunke-b570a719b"><i class="fa-brands fa-linkedin"></i> LinkDin</a>
+        <a href="https://www.instagram.com/invites/contact/?i=ogqegjrzwf89&utm_content=5727f3x"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+        <p>&copy; Ajinkya Salunke @ ICEM Pune.</p>
+    </footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+</html>
