@@ -1,5 +1,5 @@
 
-Remember That 🌈
+**Remember That 🌈**
 
 Immerse yourself in the enchanting world of "Remember That" – a demo site meticulously crafted with SCSS for an enhanced user experience.
 
